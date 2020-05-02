@@ -1,0 +1,17 @@
+{
+  "name": "lie.js",
+  "version": "1.0.2",
+  "description": "This adds useful helper functions to promises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r esm"
+  },
+  "author": "chriseyre2000",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "mocha": "^7.1.2"
+  }
+}
