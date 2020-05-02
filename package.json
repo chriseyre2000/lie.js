@@ -1,6 +1,6 @@
 {
   "name": "lie.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This adds useful helper functions to promises.",
   "main": "index.js",
   "scripts": {
