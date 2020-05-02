@@ -1,5 +1,10 @@
-# lies
+# lie.js
 Adds useful helper functions to javascript Promises
+```
+npm install lie.js
+
+yarn add lie.js
+```
 
 Currently these include:
 
