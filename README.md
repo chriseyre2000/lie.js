@@ -1,5 +1,6 @@
 # lie.js
 Adds useful helper functions to javascript Promises
+
 ```
 npm install lie.js
 
@@ -22,4 +23,6 @@ This was inspired by the default behaviour of Erlang/OTP.
 
 Service calls have a default timeout. If you have a fixed time budget then the only way to enforce this is to timeout with either a failure or a default value.
 
+```javascript
 Promise.race([yourPromise, defaultTimeout(1, 'bang')])
+```
