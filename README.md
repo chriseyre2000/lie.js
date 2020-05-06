@@ -9,11 +9,11 @@ yarn add lie.js
 
 Currently these include:
 
-## timeoutPromise
+## orReject
 
  Creates a promise that will timeout after a given interval with a fixed message
 
-## defaultTimeout 
+## orTimeout 
 
 Creates a promise with a default value after a timeout.
 
@@ -24,5 +24,5 @@ This was inspired by the default behaviour of Erlang/OTP.
 Service calls have a default timeout. If you have a fixed time budget then the only way to enforce this is to timeout with either a failure or a default value.
 
 ```javascript
-Promise.race([yourPromise, defaultTimeout(1, 'bang')])
+Promise.race([yourPromise, orTimeout('bang', 1)])
 ```
