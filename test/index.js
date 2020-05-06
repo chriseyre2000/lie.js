@@ -1,11 +1,11 @@
 import assert from 'assert'
-import {timeoutPromise, defaultTimeout} from '../index'
+import { orTimeout, orReject } from '../index'
 
 describe('Lies', function() {
-  describe('timeoutPromise', function() {
-    it('returns fail on then', function(done) {
+  describe('orReject', function() {
+    it('Errors on timeout', function(done) {
       
-      timeoutPromise(0, 'bang')
+      orReject('bang', 0)
       .then( () => {} )
       .catch( e => {
         assert.equal(e, 'bang')
@@ -14,10 +14,10 @@ describe('Lies', function() {
     });
   });
 
-  describe('defaultTimeout', function(){
-    it('returns timeout on then', function(done) {
+  describe('orTimeout', function(){
+    it('Returns timeout value on then', function(done) {
       
-      defaultTimeout(0, 'bang')
+      orTimeout('bang', 0)
       .then( (res) => {
         assert.equal(res, 'bang')
         done()
