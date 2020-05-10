@@ -16,6 +16,11 @@ Currently these include:
 
  Creates a promise that will timeout after a given interval with a fixed message
 
+```javascript
+Promise.race([yourPromise, orReject('bang', 1)])
+```
+
+
 ## orTimeout 
 
 Creates a promise with a default value after a timeout.
@@ -28,4 +33,5 @@ Service calls have a default timeout. If you have a fixed time budget then the o
 
 ```javascript
 Promise.race([yourPromise, orTimeout('bang', 1)])
+
 ```
