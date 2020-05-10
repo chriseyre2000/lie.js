@@ -43,12 +43,12 @@ jobs:
 
 workflows:
   version: 2
-  only_test:
+  test-deploy:
     jobs:
       - test:
-        filters:
-          tags:
-            only: /^v.*/
+          filters:
+            tags:
+              only: /^v.*/
       - deploy:
           requires:
             - test
