@@ -1,4 +1,7 @@
 # lie.js
+
+[![Version npm](https://img.shields.io/npm/v/lie.js.svg?style=flat-square)](https://www.npmjs.com/package/lie.js)
+
 Adds useful helper functions to javascript Promises
 
 ```
