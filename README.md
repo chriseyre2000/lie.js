@@ -35,3 +35,5 @@ Service calls have a default timeout. If you have a fixed time budget then the o
 Promise.race([yourPromise, orTimeout('bang', 1)])
 
 ```
+
+This has now been moved to use Typescript

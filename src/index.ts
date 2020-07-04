@@ -1,5 +1,5 @@
 // Deprecated - use orReject, note changed parameter order
-export function timeoutPromise(timeout: number, message: any) {
+export function timeoutPromise(timeout: number, message: any): Promise<any> {
   return new Promise((_resolve, reject) => {
     setTimeout(() => {
       reject(message);
@@ -8,7 +8,7 @@ export function timeoutPromise(timeout: number, message: any) {
 }
 
 // Deprecated - use orTimeout, note changed parameter order
-export function defaultTimeout(timeout: number, defaultValue: any) {
+export function defaultTimeout(timeout: number, defaultValue: any): Promise<any> {
   return new Promise((resolve, _reject) => {
     setTimeout(() => {
       resolve(defaultValue);
@@ -16,7 +16,7 @@ export function defaultTimeout(timeout: number, defaultValue: any) {
   });
 }
 
-export function orReject(message: any, timeout: number) {
+export function orReject(message: any, timeout: number): Promise<any> {
   return new Promise((_resolve, reject) => {
     setTimeout(() => {
       reject(message);
@@ -24,7 +24,7 @@ export function orReject(message: any, timeout: number) {
   });
 }
 
-export function orTimeout(defaultValue: any, timeout: number) {
+export function orTimeout(defaultValue: any, timeout: number): Promise<any> {
   return new Promise((resolve, _reject) => {
     setTimeout(() => {
       resolve(defaultValue);
