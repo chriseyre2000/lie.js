@@ -1,5 +1,5 @@
 import assert from 'assert'
-import { orTimeout, orReject } from '../index'
+import { orTimeout, orReject } from '../lib'
 
 describe('Lies', function() {
   describe('orReject', function() {
