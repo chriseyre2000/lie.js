@@ -31,3 +31,7 @@ export function orTimeout(defaultValue: any, timeout: number): Promise<any> {
     }, timeout);
   });
 }
+
+export function isThenable(obj: any) {
+  return typeof(obj) === 'object' && 'then' in obj && typeof obj.then === 'function';
+}
