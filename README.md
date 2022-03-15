@@ -56,3 +56,5 @@ Promise.race([yourPromise, orTimeout('bang', 1)])
 This can be very useful in tests. If you make the timeout configurable and use 0 then you can replace the result of the promise with a fixed result.
 
 This has now been moved to use Typescript
+
+I am now experimenting with github actions.
