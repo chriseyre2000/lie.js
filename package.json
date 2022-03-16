@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "npm run build && mocha -r @babel/register -r regenerator-runtime/runtime",
+    "test": "npm run build && mocha",
     "build": "tsc src/index.ts -d --outDir ./lib",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint",
