@@ -1,5 +1,5 @@
-import assert from 'assert'
-import { orTimeout, orReject } from '../lib'
+let assert = require('assert')
+let { orTimeout, orReject } = require('../lib')
 
 describe('Lies', function() {
   describe('orReject', function() {
